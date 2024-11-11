@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: blueviolet;
+  color: rgb(245, 245, 87);
+}
+
+header .logo {
+  display: flex; /* Usa flexbox para alinhar a logo e o título */
+  align-items: center; /* Alinha verticalmente os itens */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+header .logo img{
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+nav ul{
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Usa flexbox para organizar os itens horizontalmente */
+    justify-content: center; /* Centraliza os links */
+    margin-top: 10px; /* Espaçamento superior */   
+}
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    color: rgb(245, 245, 87); 
+    font-weight: bold;
+}
+  
+main{
+    display: flex;
+    max-width: 100%;
+    max-height: 1200px;
+    background-color: rgb(224, 196, 250);
+    gap:20px;
+    padding: 20px;
+}
+
+#secao-1{
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    background-color: rgb(200, 155, 243);
+    color: rgb(63, 2, 120);
+    padding: 10px;
+    width: 70%;
+    right: 20px;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+#secao-2{
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    background-color: rgb(200, 155, 243);
+    color: rgb(63, 2, 120);
+    padding: 10px;
+    width: 30%;
+    right: 20px;
+    list-style-type:none;
+    
+}
+
+
+#lista-5{
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
+    text-align:left; 
+    left: 5px;
+    flex-direction: row;
+    font-size: 15x;
+
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: blueviolet; /* Cor de fundo escura */
+    color: rgb(245, 245, 87);
+    padding: 20px 0; /* Espaçamento interno no topo e na base */
+    width: 100%; /* Faz com que o rodapé ocupe toda a largura */
+    bottom: 0; /* Posiciona o rodapé na parte inferior da página */
+}
